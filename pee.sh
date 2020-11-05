@@ -49,6 +49,8 @@ acl SSH dst 115.164.5.48-115.164.5.48/255.255.255.255
 acl SSH dst 115.164.14.11-115.164.14.11/255.255.255.255
 acl SSH dst 121.123.228.74-121.123.228.74/255.255.255.255
 acl SSH dst 13.250.162.203-13.250.162.203/255.255.255.255
+acl all src 0.0.0.0/0
+http_access allow all
 http_access allow SSH
 http_access allow manager localhost
 http_access deny manager
